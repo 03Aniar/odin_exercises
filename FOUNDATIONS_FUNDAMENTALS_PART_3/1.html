@@ -26,10 +26,21 @@
 
     function capitalize(string) {
         string = string.toLowerCase();
-        string.charAt(0) = (string.charAt(0)).toUpperCase;
+        let newTailString = string.slice(1);
+        string = string.toUpperCase();
+        string = string.substr(0, 1);
+        return string + newTailString;
     }
 
     console.log(capitalize("aniAr")); // Aniar
+
+    // 4 exercise 
+
+    function lastLetter(string) {
+        return string.slice(-1)
+    }
+
+    console.log(lastLetter("abcd"));
 
     </script>
 </body>
